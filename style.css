@@ -1,0 +1,497 @@
+* {
+  font-family: Bahnschrift;
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  transition: 0.3s;
+  text-decoration: none;
+}
+:root {
+  --home-color: #002d35;
+  --portfolio-color: #6f6f6f;
+  --contact-color: #2e2e2e;
+  --footer-color: rgb(19, 19, 19);
+  --box-color: rgb(143, 143, 143);
+  --boxhover-color: rgb(171, 171, 171);
+  --homeh3-color: rgb(255, 221, 0);
+}
+html {
+  font-size: 62.5%;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+@media only screen and (min-width: 1201px) {
+  .menuicon {
+    display: none;
+  }
+  .home .content h3 {
+    font-size: 6rem;
+    margin-bottom: 5vh;
+  }
+  .home .content p {
+    color: rgb(224, 224, 224);
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .portfolio .box_container {
+    flex-wrap: wrap;
+  }
+  .portfolio .box {
+    width: 48%;
+  }
+  .header .navbar {
+    display: none;
+  }
+  .menuicon {
+    display: block;
+  }
+  .header {
+    min-width: 85vw;
+    max-height: 8vh;
+  }
+  .home .content h3 {
+    font-size: 4.2rem;
+    margin-bottom: 2rem;
+  }
+  .home .content p {
+    font-size: 2rem;
+    color: rgb(224, 224, 224);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .portfolio .box {
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .portfolio .box_container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .design_name_box {
+    font-size: 1.2rem !important;
+    height: 6vh !important;
+  }
+  .seemore_box {
+    height: 6vh !important;
+  }
+  .seemore {
+    font-size: 1.5rem !important;
+  }
+  .seeall_button {
+    width: 70vw !important;
+    height: 10vh !important;
+    font-size: 2rem !important;
+  }
+  .navbar {
+    display: none;
+  }
+  .header {
+    max-height: 12vw;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  .menulink {
+    display: none;
+  }
+  .header .logo img {
+    width: 50vw;
+    max-height: 15vw;
+    min-height: 12vw;
+  }
+  .header .content .buttons .menuicon {
+    width: 8vw;
+  }
+  .header .content {
+    min-width: 80vw;
+  }
+  .home .content h3 {
+    font-size: 3.2rem;
+    margin-top: 8rem;
+  }
+  .home .content p {
+    font-size: 1.8rem;
+    color: rgb(224, 224, 224);
+  }
+
+  /* /////////////////// */
+
+  .contact .contact_form {
+    width: 80vw !important;
+  }
+  .contact .contact_form .contact-form-text {
+    width: 100% !important;
+    height: 8vh !important;
+    font-size: 1.5rem !important;
+  }
+  .contact .contact_form .contact-form-textarea {
+    width: 100% !important;
+    height: 15vh !important;
+    font-size: 1.5rem !important;
+  }
+  .contact .contact_form .contact_button {
+    width: 100%;
+    height: 10vh;
+    border-radius: 1rem;
+    border: none;
+  }
+
+  /* ///////////////////////// */
+
+  .footer .footer_navbar img {
+    width: 3rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    opacity: 80%;
+  }
+  .footer .footer_navbar .copyright {
+    font-size: 0.8rem;
+    color: #d3d3d3;
+    font-family: Arial;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+
+.header {
+  height: 10vh; /* if you  change this, change homepahe (-)margin too, 
+  because this vh + margin vh equal homepage's negative margin.*/
+  padding: 0 3%;
+  margin: 5vh 0;
+  width: 85vw;
+  background-color: rgb(223, 223, 223);
+  border-radius: 1.5rem;
+  border: 0.5vh solid black;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+.header .content {
+  height: 100%;
+  width: 95%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.header .content .buttons {
+  display: flex;
+}
+.header .navbar a {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-left: 3rem;
+  color: black;
+  border-bottom: 0.5rem solid transparent;
+}
+.header .logo img {
+  height: 8rem;
+}
+.header .buttons img {
+  width: 4.5rem;
+}
+.header .buttons .menuicon {
+  width: 5rem;
+}
+.header .navbar a:hover {
+  border-color: black;
+  padding-bottom: 0.5rem;
+}
+.header:hover {
+  background-color: rgb(255, 255, 255);
+  cursor: default;
+}
+
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+
+.home {
+  width: 100vw;
+  height: 90vh;
+  background-color: var(--home-color);
+  margin-top: -21vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.home .content {
+  margin: 5vh 8vw;
+  margin-bottom: 3vh;
+  padding: 2rem 0;
+}
+.home h3 {
+  color: var(--homeh3-color);
+}
+
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+
+.portfolio {
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  background-color: var(--portfolio-color);
+  box-sizing: content-box;
+}
+.portfolio .box_container {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  box-sizing: content-box;
+  flex-wrap: wrap;
+}
+.box {
+  width: 22%;
+  border-radius: 15px;
+  margin: 1.5% 0%;
+  box-sizing: border-box;
+  background: var(--box-color);
+  overflow: hidden;
+  box-sizing: content-box;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* //////////////////////////////////////*/
+
+.portfolio .box .content {
+  height: 100%;
+  box-sizing: content-box;
+  justify-content: space-between;
+}
+
+/* //////////////////////////////////////*/
+
+.design_name_box {
+  background-color: rgb(197, 197, 197);
+  width: 100%;
+  height: 10%;
+  border: 2px solid black;
+  border-radius: 1.5rem;
+  margin-top: 0.8rem;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.artbox {
+  width: 90%;
+  border: 2px solid black;
+  border-radius: 2rem;
+  overflow: hidden;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.seemore_box {
+  width: 100%;
+  height: 5rem;
+  padding: 0;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* //////////////////////////////////////*/
+
+.artbox img {
+  width: 100%;
+}
+.seemore {
+  height: 100%;
+  border-radius: 1.5rem;
+  color: white;
+  background-color: rgb(30, 30, 30);
+  cursor: pointer;
+  width: 100%;
+  font-size: 2rem;
+  border: none;
+}
+
+.box:hover {
+  background-color: var(--boxhover-color);
+  cursor: default;
+  box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.52);
+}
+.portfolio .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2%;
+  text-align: justify;
+  font-size: 2rem;
+}
+
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+
+.seeall {
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  background-color: var(--portfolio-color);
+  box-sizing: content-box;
+  padding-bottom: 3vh;
+  margin-top: -1vh;
+}
+.seeall_button {
+  background-color: rgb(177, 177, 177);
+  width: 87%;
+  height: 10vh;
+  border: 2px solid black;
+  border-radius: 1.5rem;
+  font-size: 4rem;
+  font-weight: 800;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.seeall_button:hover {
+  opacity: 0.8;
+  background-color: rgb(255, 255, 255);
+}
+
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+.contact {
+  width: 100vw;
+  padding: 40px 0;
+  background-color: var(--contact-color);
+}
+.contact .contact_form {
+  width: 60vw;
+  margin: 5vh auto;
+  padding: 0 30px;
+  align-items: center;
+  justify-content: center;
+}
+.contact .contact_form .contact-form-text {
+  display: block;
+  width: 100%;
+  height: 8vh;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background-color: rgb(26, 26, 26);
+  padding: 20px 40px;
+  outline: none;
+  color: rgb(255, 255, 255);
+  border-radius: 1.5rem;
+  font-size: 2rem;
+}
+.contact .contact_form .contact-form-textarea {
+  display: block;
+  width: 100%;
+  height: 20vh;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background-color: rgb(26, 26, 26);
+  padding: 20px 40px;
+  outline: none;
+  color: rgb(255, 255, 255);
+  border-radius: 1.5rem;
+  font-size: 2rem;
+}
+.contact-form-text:focus,
+.contact-form-textarea:focus {
+  box-shadow: 0 0 2px 2px #ffffff;
+}
+.contact_button {
+  border-radius: 1rem;
+  width: 35vw;
+  height: 8rem;
+  color: white;
+  background-color: rgb(22, 22, 22);
+  cursor: pointer;
+  font-size: 2rem;
+  text-transform: none;
+}
+.contact_button:hover {
+  background-color: rgb(153, 153, 153);
+  color: #0b0b0b;
+}
+
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+.footer {
+  height: 9vh;
+  width: 100vw;
+  background-color: var(--footer-color);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.footer_navbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.copyright {
+  font-size: 1.5rem;
+  color: #b1b1b1;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.footer img {
+  width: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  opacity: 50%;
+}
+.footer img:hover {
+  opacity: 100%;
+  margin-bottom: 2rem;
+}
+
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
