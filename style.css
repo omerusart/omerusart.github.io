@@ -1,4 +1,4 @@
-body{
+body {
     padding: 0;
     margin: 0;
     background: #292929;
@@ -16,17 +16,20 @@ body{
     font-family: myFontGighLand;
     src: url(fonts/bahn.TTF);
 }
+
 @font-face {
     font-family: myFontCubano;
     src: url(fonts/Cubano.ttf);
 }
+
 .navbar {
-    height: 90px;
+    height: 80px;
     width: 1000px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .main {
     background: #181818;
     height: calc(100vh - 115px);
@@ -39,9 +42,11 @@ body{
     overflow: hidden;
     overflow-y: scroll;
 }
+
 a {
     text-decoration: none;
 }
+
 .buttons {
     background: #181818;
     height: 50px;
@@ -51,75 +56,90 @@ a {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-family: myFontCubano;
-    font-size: 24px;
+    font-size: 50px;
     cursor: pointer;
 }
-#button1 {
-    width: 230px;
+
+.buttons p {
+    font-family: myFontCubano;
+    margin: 0 15px 0 15px;
+    font-size: 20px;
+}
+
+#button1 p {
     color: #2bc4cf;
+
 }
-#button2 {
-    width: 150px;
+
+#button2 p {
     color: #b3b3b3;
 }
-#button3 {
-    width: 240px;
+
+#button3 p {
     color: #b3b3b3;
 }
-#button4 {
-    width: 170px;
+
+#button4 p {
     color: #b3b3b3;
 }
-#button5 {
-    width: 145px;
+
+#button5 p {
+    color: #b3b3b3;
+}
+
+#button6 p {
     color: #cfa714;
 }
 
-.content_container{
+.content_container {
     height: 90%;
-    width: 80%;
-    
+    width: 82%;
+
 }
 
-.main::-webkit-scrollbar{
+.main::-webkit-scrollbar {
     width: 14px;
 }
-.main::-webkit-scrollbar-thumb{
+
+.main::-webkit-scrollbar-thumb {
     background-color: #404040;
     border-radius: 10px;
 }
-.main::-webkit-scrollbar:hover{
+
+.main::-webkit-scrollbar:hover {
     width: 25px;
 }
 
 p {
     color: #adadad;
     font-family: myFontGighLand;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 400;
 }
-.buttons:hover{
+
+.buttons:hover {
     background-color: var(--buttonHoverColor);
 }
 
 /* HAM RADIO */
 
-.radio_titleOfDocumentCard{
+.titleOfDocumentCard {
     height: 45px;
     margin-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.radio_titleOfDocumentCard_logoCard{
+
+.titleOfDocumentCard_logoCard {
     height: 50px;
     width: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.radio_titleOfDocumentCard_logoCard_titleCard{
+
+.titleOfDocumentCard_logoCard_titleCard {
     background: #000000;
     height: 60px;
     border-radius: 10px;
@@ -128,25 +148,83 @@ p {
     justify-content: center;
 }
 
+.miniTitlesOfDocument {
+    font-size: 22px;
+    color: rgb(211, 211, 211);
+    font-weight: 900;
+}
+
+.FullWidthImg_Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.FullWidthImg_Image {
+    width: 100%;
+    border-radius: 10px;
+    margin: 15px 0 15px 0;
+}
+
+.TwohalfImageContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 35px 0 35px 0;
+}
+
+.HalfWidthImg_Image {
+    width: 49%;
+    border-radius: 8px;
+}
+
+/* PROJECT */
+
+.projectCards_Container {
+    margin-top: 20px;
+}
+
+.projectCard {
+    /* border: solid; */
+    height: 45px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.projectCard_ProjectName {
+    margin-left: 20px;
+}
+
+.projectCard_ProjectName p {
+    color: #e1e1e1;
+    font-size: 20px;
+}
+
+
 
 
 
 /* CONTACT */
 
-.contact_infoCard{
+.contact_infoCard {
     height: 45px;
     display: flex;
     align-items: center;
 }
-.contact_infoCard_logoCard{
+
+.contact_infoCard_logoCard {
     height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.contact_infoCard_logoCard_image{
+
+.contact_infoCard_logoCard_image {
     height: 30px;
 }
-.contact_infoCard_textCard{
+
+.contact_infoCard_textCard {
     margin-left: 20px;
 }
