@@ -1,0 +1,487 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #292929;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+:root {
+    --buttonHoverColor: #000000;
+
+}
+
+@font-face {
+    font-family: myFontGighLand;
+    src: url(fonts/bahn.TTF);
+}
+
+@font-face {
+    font-family: myFontCubano;
+    src: url(fonts/Cubano.ttf);
+}
+
+.navbar {
+    height: 80px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main {
+    background: #181818;
+    height: calc(100vh - 115px);
+    width: 1000px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+a {
+    text-decoration: none;
+}
+
+.buttons {
+    background: #181818;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.buttons:hover {
+    background-color: black;
+    transform: translate(0, -2px);
+}
+
+.buttons p {
+    font-family: myFontCubano;
+    margin: 0 14px 0 14px;
+    font-size: 20.5px;
+}
+
+#button1 p {
+    color: #2bc4cf;
+
+}
+
+#button2 p {
+    color: #b3b3b3;
+}
+
+#button3 p {
+    color: #b3b3b3;
+}
+
+#button4 p {
+    color: #b3b3b3;
+}
+
+#button5 p {
+    color: #b3b3b3;
+}
+
+#button6 p {
+    color: #cfa714;
+}
+
+.content_container {
+    height: 90%;
+    width: 82%;
+
+}
+
+.main::-webkit-scrollbar {
+    width: 14px;
+}
+
+.main::-webkit-scrollbar-thumb {
+    background-color: #696969;
+    border-radius: 10px;
+}
+
+.main::-webkit-scrollbar:hover {
+    width: 25px;
+}
+
+.general_P {
+    color: #adadad;
+    font-family: myFontGighLand;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.mainTitleOfDocument {
+    color: #adadad;
+    font-family: myFontGighLand;
+    font-size: 220px;
+    font-weight: 400;
+    text-align: justify;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 20px 0 20px;
+}
+
+.insite_link {
+    color: rgb(200, 200, 200);
+}
+
+.outsite_link {
+    color: rgb(200, 200, 200);
+}
+
+
+
+/* HAM RADIO */
+
+.titleOfDocumentCard {
+    height: 45px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titleOfDocumentCard_logoCard {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleOfDocumentCard_logoCard_titleCard {
+    background: #000000;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.miniTitlesOfDocument {
+    font-size: 22px;
+    color: rgb(200, 200, 200);
+    font-weight: 900;
+    font-family: myFontGighLand;
+}
+
+.FullWidthImg_Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.FullWidthImg_Image {
+    width: 100%;
+    border-radius: 10px;
+    margin: 15px 0 15px 0;
+}
+
+.TwohalfImageContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 35px 0 35px 0;
+}
+
+.HalfWidthImg_Image {
+    width: 49%;
+    border-radius: 8px;
+}
+
+
+/* TOPIC TITLE CARDS */
+
+.topicListCard_container {
+    margin-top: 25px;
+}
+
+.topicListCard {
+    height: 45px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.topicListCard_imgCard {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.topicListCard_imgCard img {
+    height: 38px;
+}
+
+.topicListCard_nameCard {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    background-color: #111111;
+    border: solid rgb(40, 40, 40) 2px;
+    border-radius: 10px;
+}
+
+.topicListCard_nameCard p {
+    color: #c0c0c0;
+    font-size: 18px;
+    margin: 0 25px 0 25px;
+    font-weight: bold;
+
+}
+
+.topicListCard_statusCard {
+    height: 50px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    background-color: #131313;
+    border: solid rgb(40, 40, 40) 2px;
+    border-radius: 10px;
+}
+
+.topicListCard_statusCard p {
+    color: #408ba9;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+
+
+
+.textCard {
+    background-color: #141414;
+    border: solid rgb(53, 53, 53) 2px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin: 25px 0 25px 0;
+}
+
+.textCard_text {
+    color: #adadad;
+    font-family: myFontGighLand;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 14px 15px 14px 15px;
+}
+
+
+
+
+
+/* CONTACT */
+
+.contact_infoCard {
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.contact_infoCard_logoCard {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_infoCard_logoCard_image {
+    height: 30px;
+}
+
+.contact_infoCard_textCard {
+    margin-left: 20px;
+}
+
+
+
+/* PORTFOLIO */
+
+.portfolioTitle_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolieTitle_1 {
+    height: 60px;
+    width: 65%;
+    background-color: #111111;
+    border: solid rgb(52, 52, 52) 2px;
+    border-radius: 8px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.portfolieTitle_2 {
+    height: 50px;
+    width: 30%;
+    background-color: #111111;
+    border: solid rgb(30, 73, 82) 2px;
+    border-radius: 8px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+
+.portfolieTitle_2:hover {
+    border: solid #1884a4 2px;
+    background-color: #000000;
+}
+
+.portfolioTitle_1_text {
+    color: #adadad;
+    font-family: myFontGighLand;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.portfolioTitle_2_text {
+    color: #adadad;
+    font-family: myFontGighLand;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+
+.designCard_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.designCard {
+    height: 390px;
+    width: 390px;
+    background-color: #111111;
+    border: solid rgb(52, 52, 52) 2px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.designCard_section1 {
+    width: 360px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+.designCard_section2_container {
+    height: 64px;
+    width: 360px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.designCard_section2_img {
+    height: 64px;
+    border-radius: 5px;
+    margin-right: 6px;
+}
+
+.designCard_section2_imgCount {
+    height: 64px;
+    width: 122px;
+    border-radius: 5px;
+    background-color: #616161;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.designCard_section3 {
+    height: 68px;
+    width: 360px;
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.designCard_section3_description {
+    width: 235px;
+    height: 68px;
+    border-radius: 4px;
+    background-color: #303030;
+    display: flex;
+}
+
+.designCard_descriptionText {
+    color: #adadad;
+    font-family: myFontGighLand;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px;
+}
+
+.designCard_section3_linkButtons {
+    width: 120px;
+    height: 68px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.designCard_section3_linkButtons_button {
+    height: 32px;
+    width: 100%;
+    border-radius: 4px;
+    border: none;
+    background-color: #303030;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.designCard_section3_linkButtons_logo {
+    height: 22px;
+}
+
+.designCard_section3_linkButtons_button:hover {
+    background-color: #141414;
+}
+
+.designCard:hover {
+    background-color: #000000;
+    border: solid #878787 2px;
+}
